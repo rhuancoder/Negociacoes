@@ -62,7 +62,9 @@
     <script>
 
         var n1 = new Negociacao(new Date(), 5, 700);
-        console.log(n1, n1.obterVolume());
+        n1._quantidade = 100000;
+
+        console.log(n1, n1.volume, n1.data, n1.quantidade, n1.valor);
     </script>
 </body>
 </html>
